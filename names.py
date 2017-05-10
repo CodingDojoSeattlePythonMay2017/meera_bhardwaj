@@ -32,7 +32,7 @@ def org_names(dict):
     for i in dict:
         print i
         # for j in dict[i]:
-        for j,d in enumerate( dict[i] ):
-            print j+1, "-",d['first_name'], d['last_name'], "-",len(d['first_name'])+len(d['last_name'])
+        for j,d in enumerate( dict[i]):
+            print j+1, "-",d['first_name'].upper(), d['last_name'].upper(), "-",len(d['first_name'])+len(d['last_name'])
 
 org_names(users)
